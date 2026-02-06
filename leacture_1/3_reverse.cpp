@@ -9,7 +9,7 @@ int main(){
         rev=rev*10+temp;
         n=n/10;
     }
-    cout<<rev<<endl;
+    cout<<temp<<endl;
     cout<<add<<endl;
     cout<<abs(add);  //remove (- sign)
     return 0;

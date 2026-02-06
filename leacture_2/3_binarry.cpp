@@ -1,25 +1,26 @@
 #include<iostream>
 using namespace std;
-int rev(int n){
-    int rev=0;
-    while(n!=0){
-        int k=n%10;
-        int rev=rev*10+k;
-        n=n/10;
+void binary(int n){
+    if(n==0){
+        cout<< n;
     }
-    return rev;
-}
+    int ar[64];
+    int i=0;
 
+    while(n>0){
+        ar[i]=n%2;
+        n=n/2;
+        i++;
+    }
+
+    for(int j=i-1;j>=0;j--){
+        cout<<ar[j];
+    }
+}
 
 int main(){
     int n;
     cin>>n;
-    int bn=1;
-    while(n>0){
-        int k=n%2;
-        bn=bn*10+k;
-        n=n/2;
-    }
-    cout<<rev(bn)/10<<endl;
+    binary(n);
     return 0;
 }

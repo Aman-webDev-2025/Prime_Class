@@ -9,11 +9,14 @@ int main(){
         }
     }
         if(c==2){
-            cout<<"prime number"<<" "<<n;
+            for(int i=1;i<=n;i++){
+                for(int j=1;j<=i;j++){
+                    cout<<n;
+                }
+                cout<<endl;
+            }
 
         }
-        else{
-            cout<<"not a prime number"<<" "<<n;
-        }
+        
     return 0;
 }
