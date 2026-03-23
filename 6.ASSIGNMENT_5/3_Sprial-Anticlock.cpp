@@ -1,7 +1,7 @@
 // Take as input a 2-d array. Print the 2-D array in spiral form anti-clockwise.
-// 1 2 3
-// 4 5 6
-// 7 8 9
+// 1 2 3            00 01 02
+// 4 5 6            10 11 12
+// 7 8 9            20 21 22
 
 #include<iostream>
 #include<vector>

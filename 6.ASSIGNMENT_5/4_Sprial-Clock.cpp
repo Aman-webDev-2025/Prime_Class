@@ -1,7 +1,7 @@
 // Take as input a 2-d array. Print the 2-D array in spiral form clockwise.
-// 1 2 3
-// 4 5 6
-// 7 8 9
+// 1 2 3            00 01 02
+// 4 5 6            10 11 12
+// 7 8 9            20 21 22
 
 #include<iostream>
 #include<vector>
@@ -21,7 +21,7 @@ int main(){
     
     int startRow = 0 , endRow = m-1;
     int startCol = 0 , endCol = n-1;
-
+     
     while(startRow <= endCol && startCol <= endCol){
 
         //left - right
@@ -51,7 +51,6 @@ int main(){
             }
             startCol++;
         }
-
     }
     cout<<"END";
     return 0;
